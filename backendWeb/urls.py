@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-urlpatterns = [
+from backendWeb import views
+urlpatterns = [ #path arrayss
     path('admin/', admin.site.urls),
+    path('articles/', views.articles),
+    path('', views.home) #views file verweis.; home = send request to function in view
 ]
