@@ -25,4 +25,6 @@ def articles(request):
     return render(request, 'articles/articles.html', data) #list of string for test
 
 def home(request):
-    return HttpResponse("home page")
+    
+    #return HttpResponse("home page")
+    return render(request, 'home.html')

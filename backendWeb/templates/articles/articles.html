@@ -1,6 +1,7 @@
 <!-- for loop itterier durch gesamte test datenbank, article free variable-->
 <!-- template datenbank test
   vorteil von templating -- html/ python -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -11,40 +12,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #5A67D8;
-            text-align: center;
-        }
-
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-
-        li:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    {% load static %} <!-- aucg hier static laden!!!!!! -->
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 
 <body>
