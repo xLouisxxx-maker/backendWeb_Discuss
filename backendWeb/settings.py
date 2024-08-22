@@ -52,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backendWeb.urls'
 
-TEMPLATES = [
+TEMPLATES = [ # path wichtig angeben
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
